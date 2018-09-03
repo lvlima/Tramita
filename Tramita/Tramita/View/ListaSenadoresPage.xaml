@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tramita.View.ListaSenadoresPage"
+             Title="Senadores">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Pesquisar por nome" x:Name="entNomeSenador" TextChanged="OnPesquisarSenador" />
+            <ListView x:Name="lsvSenadores" ItemSelected="OnSelecionarSenador">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<Frame Margin="0, 20, 0, 20">
+                            <ImageCell Text="{Binding Nome}" Detail="{Binding SiglaPartidoParlamentar}" ImageSource="{Binding UrlFotoParlamentar}" />
+                        </Frame>-->
+                        <ImageCell Text="{Binding Nome}" Detail="{Binding SiglaPartidoParlamentar}" ImageSource="{Binding UrlFotoParlamentar}" />
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

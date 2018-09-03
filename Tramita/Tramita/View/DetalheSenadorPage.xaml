@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tramita.View.DetalheSenadorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="imgFoto" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="70" WidthRequest="45" />
+            <Label x:Name="lblNome" Text="Nome" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="22" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="Nome Completo:" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="14" />
+                <Label Text="Aécio da Cunha Neves" VerticalOptions="Start" HorizontalOptions="StartAndExpand" x:Name="lblNomeCompleto" FontSize="14" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="E-mail:" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="14" />
+                <Label Text="aecio.neves@senador.leg.br" VerticalOptions="Start" HorizontalOptions="StartAndExpand" x:Name="lblEmail" FontSize="14" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Partido:" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="14" />
+                <Label Text="PSDB" VerticalOptions="Start" HorizontalOptions="StartAndExpand" x:Name="lblPartido" FontSize="14" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="UF:" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="14" />
+                <Label Text="MG" VerticalOptions="Start" HorizontalOptions="StartAndExpand" x:Name="lblUF" FontSize="14" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
