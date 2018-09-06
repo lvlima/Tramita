@@ -19,8 +19,8 @@ namespace Tramita.View
 	
 		public ListaSenadoresPage ()
 		{
-			InitializeComponent ();
-            //BindingContext = new ListaSenadoresViewModel();
+			InitializeComponent();
+            BindingContext = new ListaSenadoresViewModel();
 
             ListaSenador = new List<Senador>();
 

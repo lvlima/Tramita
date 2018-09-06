@@ -21,8 +21,8 @@ namespace Tramita.View
         public MenuPage()
         {
             InitializeComponent();
-
             BindingContext = new MenuViewModel();
+
             ListView = MenuItemsListView;
         }
     }

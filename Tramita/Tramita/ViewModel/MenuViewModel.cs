@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace Tramita.ViewModel
 {
-    class MenuViewModel : INotifyPropertyChanged
+    class MenuViewModel : ViewModelBase
     {
         public ObservableCollection<MenuItem> MenuItems { get; set; }
 
@@ -22,16 +22,5 @@ namespace Tramita.ViewModel
                     new MenuItem { Id = 2, Title = "Configurações", TargetType = typeof(ConfiguracaoPage) },
                 });
         }
-
-        #region INotifyPropertyChanged Implementation
-        public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            if (PropertyChanged == null)
-                return;
-
-            PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
     }
 }

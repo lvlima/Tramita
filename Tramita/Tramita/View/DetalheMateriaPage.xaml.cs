@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Tramita.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,7 +14,9 @@ namespace Tramita.View
 	{
 		public DetalheMateriaPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+            BindingContext = new DetalheMateriaViewModel();
+
 		}
 	}
 }

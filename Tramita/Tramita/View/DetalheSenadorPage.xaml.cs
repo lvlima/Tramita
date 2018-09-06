@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tramita.Model;
 using Tramita.Service;
+using Tramita.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +16,9 @@ namespace Tramita.View
 	{
 		public DetalheSenadorPage (string id)
 		{
-			InitializeComponent ();
+			InitializeComponent();
+            BindingContext = new DetalheSenadorViewModel();
+
             Senador senador = DadosAbertosSenadoFederalService.ObterSenador(id);
             imgFoto.Source = senador.UrlFotoParlamentar;
             lblNome.Text = senador.Nome;
