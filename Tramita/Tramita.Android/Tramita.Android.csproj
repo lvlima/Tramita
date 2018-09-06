@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tramita\Tramita.csproj">
-      <Project>{9E1092A9-D69E-42DE-BA43-2915A758A6D2}</Project>
+      <Project>{9FB9748F-EB23-42CD-9E48-99F6BEBB6F3D}</Project>
       <Name>Tramita</Name>
     </ProjectReference>
   </ItemGroup>

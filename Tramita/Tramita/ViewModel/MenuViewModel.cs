@@ -9,11 +9,11 @@ using System.Runtime.CompilerServices;
 
 namespace Tramita.ViewModel
 {
-    class MenuPageViewModel : INotifyPropertyChanged
+    class MenuViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<MenuItem> MenuItems { get; set; }
 
-        public MenuPageViewModel()
+        public MenuViewModel()
         {
             MenuItems = new ObservableCollection<MenuItem>(new[]
             {
