@@ -16,14 +16,14 @@ namespace Tramita.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage
     {
-        public ListView ListView;
+        public ListView ListaItensMenu;
 
         public MenuPage()
         {
             InitializeComponent();
             BindingContext = new MenuViewModel();
 
-            ListView = lsvMenuItems;
+            ListaItensMenu = lsvMenuItems;
         }
     }
 }

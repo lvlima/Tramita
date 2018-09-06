@@ -16,7 +16,7 @@ namespace Tramita.View
         public MasterPage()
         {
             InitializeComponent();
-            MenuPage.ListView.ItemSelected += OnItemMenuSelecionado;
+            MenuPage.ListaItensMenu.ItemSelected += OnItemMenuSelecionado;
         }
 
         private void OnItemMenuSelecionado(object sender, SelectedItemChangedEventArgs e)
@@ -31,7 +31,7 @@ namespace Tramita.View
             Detail = new NavigationPage(page) { BarBackgroundColor = Color.FromHex("#003155"), BarTextColor = Color.White };
             IsPresented = false;
 
-            MenuPage.ListView.SelectedItem = null;
+            MenuPage.ListaItensMenu.SelectedItem = null;
         }
     }
 }
