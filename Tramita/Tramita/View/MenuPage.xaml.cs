@@ -23,7 +23,7 @@ namespace Tramita.View
             InitializeComponent();
             BindingContext = new MenuViewModel();
 
-            ListView = MenuItemsListView;
+            ListView = lsvMenuItems;
         }
     }
 }

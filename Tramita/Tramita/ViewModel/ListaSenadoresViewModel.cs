@@ -8,9 +8,8 @@ using Xamarin.Forms;
 
 namespace Tramita.ViewModel
 {
-    public class ListaSenadoresViewModel : INotifyPropertyChanged
+    public class ListaSenadoresViewModel : ViewModelBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
         public ICommand SelecionarSenadorCommand { get; set; }
 
         public ListaSenadoresViewModel()
@@ -23,14 +22,5 @@ namespace Tramita.ViewModel
         {
             //await Nav
         }
-
-        void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            if (PropertyChanged == null)
-                return;
-
-            PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
     }
 }

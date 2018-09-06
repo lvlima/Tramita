@@ -17,10 +17,10 @@ namespace Tramita.ViewModel
         {
             MenuItems = new ObservableCollection<MenuItem>(new[]
             {
-                    new MenuItem { Id = 0, Title = "Senadores", TargetType = typeof(ListaSenadoresPage)},
-                    new MenuItem { Id = 1, Title = "Proposições", TargetType = typeof(ListaMateriasPage) },
-                    new MenuItem { Id = 2, Title = "Configurações", TargetType = typeof(ConfiguracaoPage) },
-                });
+                new MenuItem { Id = 0, Title = "Senadores", TargetType = typeof(ListaSenadoresPage)},
+                new MenuItem { Id = 1, Title = "Proposições", TargetType = typeof(ListaMateriasPage) },
+                new MenuItem { Id = 2, Title = "Configurações", TargetType = typeof(ConfiguracaoPage) },
+            });
         }
     }
 }
