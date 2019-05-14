@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tramita.View.ListaSenadoresPage"
              Title="Senadores">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Placeholder="Pesquisar por nome" x:Name="entNomeSenador" TextChanged="OnPesquisarSenador" />
-            <ListView x:Name="lsvSenadores" ItemSelected="OnSelecionarSenador">
+            <!--<Entry Placeholder="Pesquisar por nome" x:Name="entNomeSenador" TextChanged="OnPesquisarSenador" />-->
+            <Entry Placeholder="Pesquisar por nome" x:Name="entNomeSenador" />
+            <ListView x:Name="lsvSenadores" ItemSelected="OnSelecionarSenador" ItemsSource="{Binding Senadores}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--<Frame Margin="0, 20, 0, 20">
